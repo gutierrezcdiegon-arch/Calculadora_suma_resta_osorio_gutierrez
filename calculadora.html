@@ -1,0 +1,15 @@
+<div>
+    <input type="number" id="suma_n1">
+    <span>+</span>
+    <input type="number" id="suma_n2">
+    <button onclick="calcularSuma()">Sumar</button>
+    <span id="suma_res"></span>
+</div>
+
+<script>
+    function calcularSuma() {
+        let a = parseFloat(document.getElementById('suma_n1').value) || 0;
+        let b = parseFloat(document.getElementById('suma_n2').value) || 0;
+        document.getElementById('suma_res').innerText = a + b;
+    }
+</script>
